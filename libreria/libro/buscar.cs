@@ -32,11 +32,13 @@ namespace libreria.libro
                 txtCantidad.Text = libro.CantidadActual.ToString();
                 btnEliminar.Visible = true;
                 btnAbastecer.Visible = true;
+                btnVender.Visible = true;
             }
             else
             {
                 btnEliminar.Visible = false;
-                btnAbastecer.Visible = true;
+                btnAbastecer.Visible = false;
+                btnVender.Visible = false;
                 MessageBox.Show("Libro no encontrado");
             }
 
@@ -76,6 +78,7 @@ namespace libreria.libro
                 txtCantidad.Clear();
                 btnEliminar.Visible = false;
                 btnAbastecer.Visible = false;
+                btnVender.Visible = false;
                 MessageBox.Show("Libro actualizado correctamente");
             }
             else
@@ -104,6 +107,7 @@ namespace libreria.libro
                 txtCantidad.Clear();
                 btnEliminar.Visible = false;
                 btnAbastecer.Visible = false;
+                btnVender.Visible = false;
                 MessageBox.Show("Libro actualizado correctamente");
             }
             else

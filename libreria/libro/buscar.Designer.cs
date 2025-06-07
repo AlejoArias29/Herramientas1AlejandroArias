@@ -204,6 +204,7 @@
             this.btnVender.TabIndex = 22;
             this.btnVender.Text = "Vender";
             this.btnVender.UseVisualStyleBackColor = true;
+            this.btnVender.Visible = false;
             this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
             // 
             // buscar

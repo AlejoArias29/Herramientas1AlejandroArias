@@ -6,7 +6,7 @@ namespace logica
 {
     public class LibroLogica
     {
-        string connection = "Server=DESKTOP-M002AQG;Database=TiendaLibros;Trusted_connection=True";
+        string connection = "Server=DESKTOP-GFRLJV1;Database=TiendaLibros;Trusted_connection=True";
 
         public bool CrearLogica(Libro libro)
         {

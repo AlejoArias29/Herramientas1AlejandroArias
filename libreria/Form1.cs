@@ -1,4 +1,5 @@
 ﻿using libreria.libro;
+using libreria.Transaccion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,20 @@ namespace libreria
         private void button2_Click(object sender, EventArgs e)
         {
             var form = new buscar();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btnTransacciones_Click(object sender, EventArgs e)
+        {
+            var form = new Transacciones();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            var form = new Reporte();
             form.ShowDialog();
             this.Close();
         }
